@@ -1,12 +1,10 @@
 # IgniteRE — UX case study
 
-A UX case study by **Suvarna Myneni**, UX/UI designer on FirstAm IgniteRE (the portal is named SPOTLIGHT in the interface).
+A UX case study by **Ravi Myneni**, UX/UI designer on FirstAm IgniteRE (the portal is named SPOTLIGHT in the interface).
 
 IgniteRE is a mobile-friendly platform for residential real estate transactions. It gives professionals one sign-on to share transaction details, look up property data, create marketing materials, and take part in education. The project document calls it a Gold Stevie Award winner and records Gold at The American Business Awards in the Real Estate Management Solution category.
 
 The page walks the design process with the work that is actually in the project file: framework, foundations, personas, the transaction journey, information architecture, patterns, key screens, and the design system. It does not add research counts, quotes, timelines, or team details the file does not contain.
-
-**Contact:** [LinkedIn](https://www.linkedin.com/in/suvarnamyneni/)
 
 ## View it
 
@@ -48,4 +46,4 @@ https://suvarnamyneni-project.github.io/igniteRE-case-study/
 
 ## Notes
 
-`NOTES-for-Suvarna.md` lists details the source file does not include (research method, testing, timeline, and a few labels to confirm). It is a working checklist, not part of the case study page.
+`NOTES-for-Ravi.md` lists details the source file does not include (research method, testing, timeline, and a few labels to confirm). It is a working checklist, not part of the case study page.

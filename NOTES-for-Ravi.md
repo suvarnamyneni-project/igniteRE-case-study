@@ -1,4 +1,4 @@
-# Notes for Suvarna
+# Notes for Ravi
 
 This checklist is for you, not for the case study page. The live page uses only what is in the project document and its images. Where a process step is not documented, the page says so in a sentence and stops. Fill these in with real detail when you have it, then edit `index.html`. Do not add numbers, quotes, or timelines you do not have a source for.
 
