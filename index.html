@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IgniteRE — UX case study by Suvarna Myneni</title>
+  <meta name="description" content="UX case study by Suvarna Myneni, UX/UI designer on FirstAm IgniteRE: framework, personas, journey, information architecture, key screens, and the design system. Gold Stevie Award, The American Business Awards.">
+  <meta name="author" content="Suvarna Myneni">
+  <link rel="canonical" href="https://suvarnamyneni-project.github.io/igniteRE-case-study/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="IgniteRE — UX case study by Suvarna Myneni">
+  <meta property="og:description" content="A walk through the IgniteRE design process: framework, personas, journey, architecture, screens, and design system. Gold at The American Business Awards.">
+  <meta property="og:url" content="https://suvarnamyneni-project.github.io/igniteRE-case-study/">
+  <meta property="og:image" content="https://suvarnamyneni-project.github.io/igniteRE-case-study/assets/hero-laptop.jpg">
+  <meta property="og:image:alt" content="A laptop on a desk showing the SPOTLIGHT welcome dashboard for IgniteRE.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IgniteRE — UX case study by Suvarna Myneni">
+  <meta name="twitter:description" content="A walk through the IgniteRE design process: framework, personas, journey, architecture, screens, and design system.">
+  <meta name="twitter:image" content="https://suvarnamyneni-project.github.io/igniteRE-case-study/assets/hero-laptop.jpg">
+  <meta name="theme-color" content="#043B7C">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body id="top">
+  <a class="skip" href="#overview">Skip to content</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="who" href="#top">Suvarna Myneni <span>IgniteRE case study</span></a>
+      <a class="linkedin" href="https://www.linkedin.com/in/suvarnamyneni/" rel="me noopener noreferrer">LinkedIn</a>
+    </div>
+    <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+  </header>
+
+  <div class="layout">
+    <nav class="steps" aria-label="Design process">
+      <p class="label kicker">Process</p>
+      <ol>
+        <li><a href="#overview" aria-current="true"><span class="n">01</span> Overview</a></li>
+        <li><a href="#problem"><span class="n">02</span> Problem</a></li>
+        <li><a href="#discover"><span class="n">03</span> Discover</a></li>
+        <li><a href="#define"><span class="n">04</span> Define</a></li>
+        <li><a href="#personas"><span class="n">05</span> Personas</a></li>
+        <li><a href="#journeys"><span class="n">06</span> Journeys</a></li>
+        <li><a href="#ia"><span class="n">07</span> IA</a></li>
+        <li><a href="#patterns"><span class="n">08</span> Patterns</a></li>
+        <li><a href="#ui"><span class="n">09</span> UI</a></li>
+        <li><a href="#system"><span class="n">10</span> System</a></li>
+        <li><a href="#responsive"><span class="n">11</span> Responsive</a></li>
+        <li><a href="#results"><span class="n">12</span> Results</a></li>
+        <li><a href="#reflection"><span class="n">13</span> Reflection</a></li>
+      </ol>
+    </nav>
+
+    <div class="content">
+      <header class="hero">
+        <div class="wrap">
+          <p class="kicker">UX case study</p>
+          <h1>IgniteRE</h1>
+          <p class="lead">A mobile-friendly platform for residential real estate transactions. One sign-on for sharing transaction details, property data, marketing materials, and education. In the interface, the portal is named SPOTLIGHT.</p>
+          <div class="meta">
+            <div><b>Role</b> UX/UI designer</div>
+            <div><b>Tools</b> Sketch, Figma, InVision, Miro</div>
+            <div><b>Product</b> FirstAm IgniteRE</div>
+            <div><b>Recognition</b> Gold Stevie Award</div>
+          </div>
+          <figure>
+            <button type="button" class="shot" aria-label="Enlarge image: SPOTLIGHT welcome dashboard on a laptop">
+              <img src="assets/hero-laptop.jpg" width="2400" height="1111" alt="A laptop on a desk showing the SPOTLIGHT welcome dashboard, with primary navigation, a greeting, and cards for farming and marketing.">
+            </button>
+            <figcaption>The SPOTLIGHT home screen, in the setting used on the project cover.</figcaption>
+          </figure>
+          <p class="note">Select any image to enlarge it. Arrow keys move between images. Escape closes the view.</p>
+        </div>
+      </header>
+
+      <main>
+        <section id="overview">
+          <div class="wrap">
+            <p class="kicker"><span class="n">01</span> Overview</p>
+            <h2>The product and the role</h2>
+            <div class="prose">
+              <p>FirstAm IgniteRE is described in the project document as a Gold Stevie Award–winning, mobile-friendly technology platform designed to enhance residential real estate transactions. It provides single sign-on access to tools and resources, so real estate professionals can securely share transaction details, access property data, create marketing materials, and take part in education.</p>
+              <p>My role was UX/UI design. The tools recorded for the work are Sketch, Figma, InVision, and Miro.</p>
+              <p>The home screen is the signature experience the later framework calls a useful dashboard. It keeps one shell around the work: primary navigation for Dashboard, Transactions, Properties, Marketing, Calculators, and Classes; a welcome; a sales rep; and a next step. Two states are drawn. A first visit offers ways to jump in. A return visit leads with messages and a task that is due.</p>
+            </div>
+            <div class="grid-2">
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: first-visit SPOTLIGHT dashboard">
+                  <img src="assets/dashboard-welcome.jpg" width="2400" height="1852" alt="SPOTLIGHT dashboard for a first visit. Welcome Rachel, cards for farming and custom print marketing, links for placing an order and running a report, help actions, an upcoming class, and a sales rep message." loading="lazy">
+                </button>
+                <figcaption>First-visit home. Cards invite farming and print marketing. Lessons, help, an upcoming class, and the sales rep sit in the same view.</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: returning SPOTLIGHT dashboard">
+                  <img src="assets/dashboard-return.jpg" width="2400" height="1852" alt="SPOTLIGHT dashboard for a returning visit. Jump back in shows two secure messages and an action-needed transaction, with a recently viewed property and an upcoming class below." loading="lazy">
+                </button>
+                <figcaption>Returning home. Secure messages and an action-needed transaction come first, then a recently viewed property and an upcoming class.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section id="problem">
+          <div class="wrap">
+            <p class="kicker"><span class="n">02</span> Problem</p>
+            <h2>Problem and project goals</h2>
+            <div class="prose">
+              <p>A residential transaction already involves agents, lenders, attorneys, and the people buying or selling. The product has to make that work feel like one place: secure sharing of transaction details, property data, marketing materials, and classes, behind a single sign-on.</p>
+              <p>The project document sets five goals for the design.</p>
+            </div>
+            <div class="goals">
+              <article class="goal">
+                <h3>Design system</h3>
+                <p>Use systems thinking to arrive at repeatable UX patterns and a dynamic component library.</p>
+              </article>
+              <article class="goal">
+                <h3>Global navigation</h3>
+                <p>Design a unified navigation and UX shell grounded in the applicable user flows.</p>
+              </article>
+              <article class="goal">
+                <h3>Quick win</h3>
+                <p>Identify current customer-experience pain points where interaction and visual design can help. The file sets this goal and does not name which pain point was chosen.</p>
+              </article>
+              <article class="goal">
+                <h3>Brand expression</h3>
+                <p>Champion the new portal design as a showcase for an elevated First American visual brand experience.</p>
+              </article>
+              <article class="goal">
+                <h3>Core capabilities</h3>
+                <p>Craft interaction and visual design for the platform’s core capabilities.</p>
+              </article>
+            </div>
+            <div class="prose">
+              <p>Those goals are what the rest of the file answers. The framework and principles define the system. Personas and the transaction journey ground the navigation. The screens are the core capabilities. Icons, color, and the component sheets are the library.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="discover">
+          <div class="wrap">
+            <p class="kicker"><span class="n">03</span> Discover</p>
+            <h2>Discover and the UX framework</h2>
+            <div class="prose">
+              <p>Discovery in the project file is a framework. The customer benefit sits at the top. Experience pillars sit under it. The base splits into the signature experiences people should feel and the foundational components the system is built from.</p>
+            </div>
+            <div class="pyramid">
+              <div class="band benefit">
+                <p class="kicker">Customer benefit</p>
+                <p>It’s swift &amp; easy to do business with First American</p>
+              </div>
+              <div class="band pillars">
+                <p class="kicker">Experience pillars</p>
+                <ul class="pills">
+                  <li>Break down capability silos</li>
+                  <li>Security through transparency</li>
+                  <li>Empower both real estate agents and sales reps</li>
+                  <li>Simplify and unify</li>
+                  <li>Focus on the full transaction</li>
+                </ul>
+              </div>
+              <div class="base">
+                <div class="band">
+                  <p class="kicker">Signature experiences</p>
+                  <ul class="pills">
+                    <li>Clear navigation &amp; mental model</li>
+                    <li>Golden paths through apps</li>
+                    <li>Useful dashboard experience</li>
+                    <li>Villa visual direction</li>
+                  </ul>
+                </div>
+                <div class="band">
+                  <p class="kicker">Foundational components</p>
+                  <ul class="pills">
+                    <li>Unified profile management</li>
+                    <li>Extensible UX patterns</li>
+                    <li>Systematic UI components</li>
+                    <li>Functioning prototype</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <figure>
+              <button type="button" class="shot" aria-label="Enlarge image: IgniteRE UX framework pyramid">
+                <img src="assets/ux-framework.jpg" width="2400" height="1139" alt="UX framework pyramid. Customer benefit: It’s swift and easy to do business with First American. Pillars include breaking down capability silos, security through transparency, empowering agents and sales reps, simplify and unify, and focus on the full transaction. The base lists signature experiences and foundational components." loading="lazy">
+              </button>
+              <figcaption>The UX framework from the project file. “Villa visual direction” is named as a signature experience; the file does not define the phrase.</figcaption>
+            </figure>
+            <div class="prose">
+              <p>The same ideas return in the artifacts that follow. A single shell is how capability silos come down. The sales rep is present on the dashboard, next to the tools the agent uses. Secure transaction screens and the long Secure Portal span on the journey are where transparency and the full transaction show up. Navigation, the dashboard, patterns, and UI components are drawn later as their own deliverables.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="define">
+          <div class="wrap">
+            <p class="kicker"><span class="n">04</span> Define</p>
+            <h2>Foundations, intent, and principles</h2>
+            <div class="prose">
+              <p>The foundations explain what the system is for. First American builds utilitarian tools to augment strong relationships with busy customers. The system holds guidelines, styles, and components so design can stay consistent and repeatable across existing and new experiences. Its purpose is to make design more collaborative, consistent, and streamlined, so attention can stay on user needs, shorter project timelines, and better Title and Escrow experiences.</p>
+              <p>Three principles follow. They are quoted from the project document.</p>
+            </div>
+            <div class="principles">
+              <article class="principle">
+                <h3>1. Customers above all</h3>
+                <blockquote>
+                  <p>Think about the needs of different types of First American users and be intentional about how to respond to them in a product or feature. Whenever possible, use research to inform your decision-making so you can map your process to how real users think and work.</p>
+                </blockquote>
+              </article>
+              <article class="principle">
+                <h3>2. Enable but don’t overwhelm</h3>
+                <blockquote>
+                  <p>First American builds strong relationships with our customers around the services we provide. We also build powerful tools and systems meant to augment and streamline those relationships. Even though the systems we design are complicated, they should feel effortless. We accomplish this by removing unnecessary steps and making sure people understand what they need to do throughout the experience.</p>
+                </blockquote>
+              </article>
+              <article class="principle">
+                <h3>3. Unify and reuse</h3>
+                <blockquote>
+                  <p>First American should present a cohesive experience to all users, no matter where they are in the product. Use consistent language, patterns, and components across the interface to make it easier for users to get stuff done.</p>
+                </blockquote>
+              </article>
+            </div>
+            <div class="prose">
+              <p>The personas are the “customers above all” artifact: three roles, each with jobs, pains, gains, and the portal features that matter to them. The returning home screen follows the second principle in what it puts first — a secure message and a task that is due, before the rest of the portal. The third principle is the global navigation, the pattern library, and the component sheets.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="personas">
+          <div class="wrap">
+            <p class="kicker"><span class="n">05</span> Personas</p>
+            <h2>User personas</h2>
+            <div class="prose">
+              <p>Three personas are documented. Each card names a role, a focus, and a user type, then jobs, pains, gains, and portal features. The text below is transcribed from those cards. The project file does not describe how the personas were researched.</p>
+            </div>
+
+            <article class="persona">
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: Rachel and Team persona card">
+                  <img src="assets/persona-rachel.jpg" width="2400" height="1462" alt="Persona card for Rachel and Team, a real estate agent focused on finding and serving clients. Jobs include property searches, farming, marketing, ordering title and escrow, and calculating costs. Portal features Properties, Calculators, Marketing, and Secure Portal are all selected." loading="lazy">
+                </button>
+                <figcaption>Rachel &amp; Team. All four portal features on the card are selected.</figcaption>
+              </figure>
+              <div class="persona-copy">
+                <h3>Rachel &amp; Team</h3>
+                <dl class="facts">
+                  <div><dt>Role</dt><dd>Real Estate Agent</dd></div>
+                  <div><dt>Focus</dt><dd>Finding &amp; serving clients</dd></div>
+                  <div><dt>User type</dt><dd>Buyer/Seller advocate</dd></div>
+                </dl>
+                <div class="jpg-grid">
+                  <div>
+                    <h4>Jobs</h4>
+                    <ul>
+                      <li>Property searches</li>
+                      <li>Farming properties for prospective customers</li>
+                      <li>Sending marketing materials</li>
+                      <li>Ordering Title / Escrow</li>
+                      <li>Calculating costs, fees, or quotes</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Pains</h4>
+                    <ul>
+                      <li>Not getting information quickly enough</li>
+                      <li>Lack of trust in the technology</li>
+                      <li>Accuracy of the data</li>
+                      <li>Anything that takes away from marketing and securing new deals</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Gains</h4>
+                    <ul>
+                      <li>The sales rep addresses needs by email or phone and provides solutions inside the portal</li>
+                      <li>A “Report Data” feature for specific data inside the portal</li>
+                      <li>A smooth, reliable, trusted transition to order processing</li>
+                    </ul>
+                  </div>
+                </div>
+                <p>Portal features selected on the card: Properties, Calculators, Marketing, and Secure Portal.</p>
+                <ul class="chips">
+                  <li>Properties</li>
+                  <li>Calculators</li>
+                  <li>Marketing</li>
+                  <li>Secure Portal</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="persona">
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: Lance persona card">
+                  <img src="assets/persona-lance.jpg" width="2400" height="1462" alt="Persona card for Lance, a mortgage lender focused on securing financing. Jobs include opening or joining an order, exchanging information including the CD, providing closing documents, and getting accurate fees. Only Secure Portal is selected." loading="lazy">
+                </button>
+                <figcaption>Lance. Secure Portal is the selected feature. Properties, Calculators, and Marketing are not.</figcaption>
+              </figure>
+              <div class="persona-copy">
+                <h3>Lance</h3>
+                <dl class="facts">
+                  <div><dt>Role</dt><dd>Mortgage Lender</dd></div>
+                  <div><dt>Focus</dt><dd>Securing financing</dd></div>
+                  <div><dt>User type</dt><dd>Buyer/Seller advocate</dd></div>
+                </dl>
+                <div class="jpg-grid">
+                  <div>
+                    <h4>Jobs</h4>
+                    <ul>
+                      <li>Open or join an order</li>
+                      <li>Exchange information with the borrower and First American, including the CD</li>
+                      <li>Provide closing documents and instructions</li>
+                      <li>Get accurate fees from First American</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Pains</h4>
+                    <ul>
+                      <li>Dealing with other integrated online platforms</li>
+                      <li>Dysfunction in the process of determining fees</li>
+                      <li>Accuracy of the data</li>
+                      <li>Complex post-closing activities and searching for things later on</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Gains</h4>
+                    <ul>
+                      <li>Accurate fee quotes received in a timely fashion</li>
+                      <li>Clear-to-close and title-status communications</li>
+                      <li>Quick issue notification and resolution</li>
+                      <li>A reactive and reliable closing</li>
+                    </ul>
+                  </div>
+                </div>
+                <p>Portal feature selected on the card: Secure Portal. Properties, Calculators, and Marketing are shown unselected.</p>
+                <ul class="chips">
+                  <li class="off">Properties <span class="vh">not selected</span></li>
+                  <li class="off">Calculators <span class="vh">not selected</span></li>
+                  <li class="off">Marketing <span class="vh">not selected</span></li>
+                  <li>Secure Portal</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="persona">
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: Angela persona card">
+                  <img src="assets/persona-angela.jpg" width="2400" height="1407" alt="Persona card for Angela, an Illinois attorney focused on reviewing and inspecting deals. Jobs include legal advice, negotiating terms, closing instructions, drafting documents, and curing title requirements. Only Secure Portal is selected." loading="lazy">
+                </button>
+                <figcaption>Angela. Secure Portal is the selected feature.</figcaption>
+              </figure>
+              <div class="persona-copy">
+                <h3>Angela</h3>
+                <dl class="facts">
+                  <div><dt>Role</dt><dd>Attorney (Illinois)</dd></div>
+                  <div><dt>Focus</dt><dd>Review and inspect deals</dd></div>
+                  <div><dt>User type</dt><dd>Buyer/Seller advocate</dd></div>
+                </dl>
+                <div class="jpg-grid">
+                  <div>
+                    <h4>Jobs</h4>
+                    <ul>
+                      <li>Provide legal advice</li>
+                      <li>Negotiate terms with all parties</li>
+                      <li>Provide closing instruction</li>
+                      <li>Draft documents</li>
+                      <li>Perform curing title requirements based on feedback</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Pains</h4>
+                    <ul>
+                      <li>Back and forth of document versions</li>
+                      <li>Waiting for return of documents</li>
+                      <li>Getting regular status updates</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Gains</h4>
+                    <ul>
+                      <li>Seamless document collaboration among parties</li>
+                      <li>Timeliness of activities</li>
+                      <li>Enough time to review materials</li>
+                      <li>Generally effective communications</li>
+                    </ul>
+                  </div>
+                </div>
+                <p>Portal feature selected on the card: Secure Portal. Properties, Calculators, and Marketing are shown unselected.</p>
+                <ul class="chips">
+                  <li class="off">Properties <span class="vh">not selected</span></li>
+                  <li class="off">Calculators <span class="vh">not selected</span></li>
+                  <li class="off">Marketing <span class="vh">not selected</span></li>
+                  <li>Secure Portal</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="journeys">
+          <div class="wrap">
+            <p class="kicker"><span class="n">06</span> Journeys</p>
+            <h2>The transaction journey</h2>
+            <div class="prose">
+              <p>One journey is documented: the transaction, from first contact through post-closing. It is a matrix, not a single happy path. Phases run across the top. Rows show who is involved, which channel carries the moment, and where the portal itself is used.</p>
+              <p>The roles are the buyer or seller, the real estate agent, the attorney, and the lender — the same kinds of people named in the personas, with the buyer or seller called out on the journey as their own row. Channels are mobile, web, in person, phone, email, mail, text, and fax. A “Utilizes Portal” marker flags phases that use the product. Under portal areas, Calculators is a short span near the start. Secure Portal runs across most of the transaction after that.</p>
+              <p>The map is the reason the shell cannot be only an agent tool. Phone, email, mail, and in-person contact stay in the journey beside the portal. The product is designed into specific phases, not in place of every channel.</p>
+            </div>
+            <figure>
+              <button type="button" class="shot" aria-label="Enlarge image: transaction user journey">
+                <img src="assets/journey-transaction.jpg" width="2400" height="1325" alt="Transaction user journey matrix. Phases run from first contact through post-closing. Rows mark participation for buyer or seller, real estate agent, attorney, and lender, then channels for mobile, web, in person, phone, email, mail, text, and fax. Portal areas show Calculators near the start and Secure Portal across most of the journey." loading="lazy">
+              </button>
+              <figcaption>Transaction user journey. Calculators is marked near the start. Secure Portal spans most of the phases that follow. Other channels continue alongside both.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="ia">
+          <div class="wrap">
+            <p class="kicker"><span class="n">07</span> IA</p>
+            <h2>Information architecture</h2>
+            <div class="prose">
+              <p>Global navigation is the goal of a unified shell, drawn as a map. Seven areas hang from it: Dashboard, Transactions, Properties, Marketing, Calculators, Classes, and Utility nav. The outline below is transcribed from that map. The image is the record.</p>
+              <p>Calculators is a full branch here and a portal area on the journey. The project file does not include a calculators key screen.</p>
+            </div>
+            <figure>
+              <button type="button" class="shot" aria-label="Enlarge image: global navigation map">
+                <img src="assets/ia-global-nav.jpg" width="2400" height="1086" alt="Global navigation map with seven branches: Dashboard, Transactions, Properties, Marketing, Calculators, Classes, and Utility nav, each with the pages and modules listed beneath." loading="lazy">
+              </button>
+              <figcaption>Global navigation. One shell, seven branches, and the pages under each.</figcaption>
+            </figure>
+            <div class="ia-grid">
+              <article class="ia-col">
+                <h3>Dashboard</h3>
+                <h4>Home</h4>
+                <ul>
+                  <li>Welcome Module</li>
+                  <li>Jump Back In</li>
+                  <li>Learn the Ropes</li>
+                  <li>Sales Rep Message</li>
+                </ul>
+              </article>
+              <article class="ia-col">
+                <h3>Transactions</h3>
+                <h4>Open transactions</h4>
+                <ul>
+                  <li>First American Team</li>
+                  <li>Estimated Closing Date</li>
+                  <li>Transaction Timeline</li>
+                  <li>Secure Messages</li>
+                  <li>Documents</li>
+                </ul>
+                <h4>Closed transactions</h4>
+                <ul>
+                  <li>First American Team</li>
+                  <li>Estimated Closing Date</li>
+                  <li>Transaction Timeline</li>
+                  <li>Secure Messages</li>
+                  <li>Documents</li>
+                </ul>
+                <h4>FAQ</h4>
+              </article>
+              <article class="ia-col">
+                <h3>Properties</h3>
+                <h4>Individual property</h4>
+                <ul>
+                  <li>Address, Owner, Street View</li>
+                  <li>Property Details, Property Profile</li>
+                  <li>Transaction History, Comparable Sales</li>
+                  <li>Tax Map, Schools, Neighbors, Notes</li>
+                </ul>
+                <h4>Property farm</h4>
+                <ul>
+                  <li>Number of Properties</li>
+                  <li>Recent Sale Percentage</li>
+                  <li>Individual Properties, Custom Label, Notes</li>
+                </ul>
+                <h4>Recorder documents</h4>
+                <ul><li>Order Recorded Documents</li></ul>
+                <h4>Customer service</h4>
+                <ul><li>Ordered Customer Service</li></ul>
+              </article>
+              <article class="ia-col">
+                <h3>Marketing</h3>
+                <h4>Home</h4>
+                <ul>
+                  <li>Products, Downloads, Addresses</li>
+                  <li>My Orders, Cart</li>
+                </ul>
+                <h4>All products</h4>
+                <ul>
+                  <li>Products, Downloads</li>
+                  <li>Help &amp; FAQ, Jobs, Cart</li>
+                </ul>
+              </article>
+              <article class="ia-col">
+                <h3>Calculators</h3>
+                <h4>Home</h4>
+                <ul>
+                  <li>Buyer Net Sheet, Seller Net Sheet</li>
+                  <li>NetFirst, Multiple Offers, Short Sale</li>
+                  <li>Refinance, Rent vs Buy, Quick Quotes</li>
+                  <li>Title Escrow Free</li>
+                  <li>Closing Date Calculator</li>
+                </ul>
+              </article>
+              <article class="ia-col">
+                <h3>Classes</h3>
+                <h4>Home</h4>
+                <ul>
+                  <li>Hero</li>
+                  <li>Upcoming Classes in Your Area</li>
+                </ul>
+                <h4>Upcoming classes</h4>
+                <ul>
+                  <li>Class List</li>
+                  <li>Find a Class Near You</li>
+                </ul>
+                <h4>Class details</h4>
+                <ul>
+                  <li>Title, Date &amp; Time, Location</li>
+                  <li>Capacity, Price, Instructor</li>
+                  <li>Description, Photo, Location Map</li>
+                </ul>
+                <h4>Full catalog</h4>
+                <h4>Manage my classes</h4>
+                <ul>
+                  <li>Registered Classes</li>
+                  <li>Completed Classes</li>
+                </ul>
+              </article>
+              <article class="ia-col">
+                <h3>Utility nav</h3>
+                <h4>Help</h4>
+                <ul>
+                  <li>Help Center, Leave a Message</li>
+                  <li>Live Chat, Sales Rep Contact Info</li>
+                </ul>
+                <h4>Notifications</h4>
+                <h4>My account</h4>
+                <p class="note">Personal information: Profile, Contact Information, Payment Information.</p>
+                <p class="note">Notifications: Title/Escrow Orders, Customer Service.</p>
+                <p class="note">Integrations: Evernote, ReboGateway.</p>
+                <p class="note">People: Authorized Users, Address Books.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="patterns">
+          <div class="wrap">
+            <p class="kicker"><span class="n">08</span> Patterns</p>
+            <h2>Ideation and UX patterns</h2>
+            <div class="prose">
+              <p>Miro is one of the tools recorded for the project. Early boards and sketches are not in the file. What the file does include is the pattern set those explorations resolved into.</p>
+              <blockquote>
+                <p>These patterns and guidelines create clarity and confidence for users so they can spend less time learning, and more time getting things done.</p>
+              </blockquote>
+              <p>Eleven patterns are specified: navigation, panels, modals, tabs, expandable information, pop-overs, coachmarks, mobile patterns, cards, step-throughs, and breadcrumbs. They are the reusable answers to the design-system goal, and they are the pieces the key screens are built from. Tabs separate products, property views, classes, and transactions. Cards carry the dashboard and the class list. A step-through carries print customization. Pop-overs carry actions on a farm. The mobile pattern shows the shell collapsed to a menu.</p>
+            </div>
+            <figure>
+              <button type="button" class="shot" aria-label="Enlarge image: eleven UX patterns">
+                <img src="assets/ux-patterns.jpg" width="2400" height="1524" alt="Eleven UX patterns: navigation, panels, modals, tabs, expandable information, pop-overs, coachmarks, mobile patterns, cards, step-throughs, and breadcrumbs, each shown as a small interface example." loading="lazy">
+              </button>
+              <figcaption>The pattern library. Each item is a small example of a behavior used across the portal.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="ui">
+          <div class="wrap">
+            <p class="kicker"><span class="n">09</span> UI</p>
+            <h2>Key screens</h2>
+            <div class="prose">
+              <p>The core capabilities are designed inside the same shell. Marketing, properties, classes, and transactions each keep the primary navigation, the SPOTLIGHT header, and the account. Sign-in and the invitation email are the way in. Screens below are shown at the sizes documented: web, tablet, or phone.</p>
+            </div>
+
+            <h3>Marketing</h3>
+            <div class="prose">
+              <p>Rachel’s card selects Marketing, and her jobs include sending marketing materials. On the web, print products live in the portal: a short argument for printed pieces, categories across the page, and a search over popular products. On the phone, the task narrows to two choices the screen makes explicit — a color, and how contact information appears on the front.</p>
+            </div>
+            <div class="pair">
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: Marketing on the web">
+                  <img src="assets/screen-marketing-web.jpg" width="2400" height="1604" alt="Marketing on a laptop. The page Avoid Digital Overload offers Explore and Get Started, product photography, categories such as postcards, calendars, flyers, and brochures, and a search over popular products." loading="lazy">
+                </button>
+                <figcaption>Marketing on the web. Categories and popular products sit inside the shared shell. Orders are a tab, with a count.</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: Marketing on a phone">
+                  <img src="assets/screen-marketing-mobile.jpg" width="1798" height="2400" alt="A phone held in one hand showing Marketing. A color named Nightfall is selected, and contact-information choices are None, Logos only, 1 Contact, and 2 Contacts." loading="lazy">
+                </button>
+                <figcaption>Marketing on the phone. Pick a color, then choose whether the front shows no contact information, logos only, or one or two contacts.</figcaption>
+              </figure>
+            </div>
+
+            <h3>Properties</h3>
+            <div class="prose">
+              <p>Property search and farming are jobs on Rachel’s card, and Properties is one of her selected features. The web screen is a map with search and recent lookups, under tabs for property search, farming, reports, and recorded documents. The tablet screen is a farm: a list of properties beside the map, and actions to run a combined report, export the farm, generate mailing labels, or remove a property.</p>
+            </div>
+            <div class="pair even">
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: Properties on the web">
+                  <img src="assets/screen-properties-web.jpg" width="2400" height="1976" alt="Properties on a laptop. A map with search for address, intersection, or ZIP, recent searches listed over the map, and tabs for Property Search, Farming, Reports, and Recorded Documents." loading="lazy">
+                </button>
+                <figcaption>Properties on the web. Search and recent lookups over the map.</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: a property farm on a tablet">
+                  <img src="assets/screen-properties-tablet.jpg" width="2400" height="2329" alt="A tablet showing a property farm. A list of properties sits over a map, with a menu for Run Combined Report, Export Farm, Generate Mailing Labels, and Remove from Farm." loading="lazy">
+                </button>
+                <figcaption>A farm on tablet. The list and the map stay together. Actions for the farm open in a menu.</figcaption>
+              </figure>
+            </div>
+
+            <h3>Classes</h3>
+            <div class="prose">
+              <p>Education is one of the four things the product overview promises. The web screen is a class detail: title, register, date and time, location, capacity, price, instructors, description, and a map. The tablet screen is the upcoming list, as cards, with date, place, price, and an attending state. Both match the class-details and upcoming-classes branches in the architecture.</p>
+            </div>
+            <div class="pair even">
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: class detail on the web">
+                  <img src="assets/screen-classes-web.jpg" width="1437" height="1280" alt="Class detail on a laptop for The Homeowner’s Policy. Register for Class, date and time, location, capacity, price, instructors, a description, and a map." loading="lazy">
+                </button>
+                <figcaption>Class detail on the web, with register, the facts of the session, instructors, and a map.</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: upcoming classes on a tablet">
+                  <img src="assets/screen-classes-tablet.jpg" width="2347" height="2088" alt="Upcoming classes on a tablet, shown as cards with a photo, title, date, place, price, and an Attending tag." loading="lazy">
+                </button>
+                <figcaption>Upcoming classes on tablet. Cards instead of a table, with attending called out on the card.</figcaption>
+              </figure>
+            </div>
+
+            <h3>Transactions</h3>
+            <div class="prose">
+              <p>Lance and Angela select Secure Portal, and the journey keeps Secure Portal across most phases. On the web, open transactions are a table: who the parties are, the property, opened and estimated closing dates, the latest milestone, and activity. Closed transactions and an FAQ are tabs, and a new transaction can be started from the header. On the phone, one transaction fills the screen: overview, messages, and documents, plus a prompt for information that is still missing.</p>
+            </div>
+            <div class="pair">
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: open transactions on the web">
+                  <img src="assets/screen-transactions-web.jpg" width="2000" height="1333" alt="Open transactions on a laptop. A searchable table lists parties, property address, opened date, estimated closing, the latest milestone, and activity. Tabs include Closed Transactions and FAQ, and there is a New Transaction action." loading="lazy">
+                </button>
+                <figcaption>Open transactions on the web. Status is a row in a table, with the next milestone visible without opening the file.</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: a transaction on a phone">
+                  <img src="assets/screen-transactions-mobile.jpg" width="989" height="880" alt="A phone showing one open transaction, with the property address, an escrow officer, tabs for Overview, Messages, and Documents, and a prompt that additional information is required." loading="lazy">
+                </button>
+                <figcaption>One transaction on the phone. Overview, messages, and documents are tabs. Missing information is the first task.</figcaption>
+              </figure>
+            </div>
+
+            <h3>Sign in</h3>
+            <div class="prose">
+              <p>The overview describes single sign-on. The sign-in screen asks for an Eagle ID to access SPOTLIGHT: username, password, a way to reset the password, and a way to request access. A photograph of a house fills the other half of the web layout, which is the brand expression goal applied to the front door.</p>
+            </div>
+            <figure>
+              <button type="button" class="shot" aria-label="Enlarge image: SPOTLIGHT sign-in on the web">
+                <img src="assets/screen-signin-web.jpg" width="1352" height="1200" alt="Sign-in on a laptop outdoors. The form says Sign in with your Eagle ID to access SPOTLIGHT, with username, password, forgot password, and a request-access link. A house photograph fills the other half of the screen." loading="lazy">
+              </button>
+              <figcaption>Sign in on the web. Eagle ID on one side, the brand photograph on the other.</figcaption>
+            </figure>
+
+            <h3>Email template</h3>
+            <div class="prose">
+              <p>The invitation email is part of the same entry. It welcomes the reader to SPOTLIGHT, explains the portal as a secure place to stay organized and close faster, and offers account setup. It names two things the portal can do — send messages and view transaction status — and introduces the sales rep. The template uses the eagle, the navy button, and the same sales-rep pattern as the product.</p>
+            </div>
+            <figure>
+              <button type="button" class="shot" aria-label="Enlarge image: SPOTLIGHT invitation email on a tablet">
+                <img src="assets/screen-email.jpg" width="2400" height="1830" alt="A tablet showing an invitation email. Hello Rachel, a Setup my account button, a note that the portal can send messages and view transaction status, and the sales rep’s name and phone." loading="lazy">
+              </button>
+              <figcaption>Invitation email, shown on a tablet. Setup, what the portal is for, and who the sales rep is.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="system">
+          <div class="wrap">
+            <p class="kicker"><span class="n">10</span> System</p>
+            <h2>Design system</h2>
+            <div class="prose">
+              <p>The design-system goal was repeatable patterns and a dynamic component library. The patterns are above. The library work in the file is the dashboard, named piece by piece, then iconography and color. Brand expression is specified here too: the eagle watermark, the SPOTLIGHT name in the header, and the palette.</p>
+            </div>
+
+            <h3>Dashboard components</h3>
+            <div class="prose">
+              <p>Five sheets annotate the same home screen so the parts can be reused. The welcome bar is the greeting plus widgets. The header is platform branding and utility navigation. The navigation bar is the eagle, primary navigation, and My Sales Rep. Jump In is the card area, with a card or list toggle. A further sheet calls out Help Center content, the help buttons, and the sales rep message.</p>
+            </div>
+            <div class="grid-2">
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: welcome bar component sheet">
+                  <img src="assets/component-welcome-bar.jpg" width="2400" height="1452" alt="Dashboard component sheet titled Welcome Bar. Callouts mark Platform Greeting and Welcome Bar Widgets on the SPOTLIGHT home screen." loading="lazy">
+                </button>
+                <figcaption>Welcome bar: platform greeting and welcome-bar widgets.</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: header bar component sheet">
+                  <img src="assets/component-header.jpg" width="2400" height="1452" alt="Dashboard component sheet titled Header Bar. Callouts mark Platform Branding on the SPOTLIGHT wordmark and Utility Navigation for help, notifications, and the account." loading="lazy">
+                </button>
+                <figcaption>Header bar: platform branding and utility navigation.</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: navigation bar component sheet">
+                  <img src="assets/component-navigation.jpg" width="2400" height="1452" alt="Dashboard component sheet titled Navigation Bar. Callouts mark the First American eagle watermark, primary navigation, and My Sales Rep." loading="lazy">
+                </button>
+                <figcaption>Navigation bar: eagle watermark, primary navigation, and My Sales Rep.</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: Jump In component sheet">
+                  <img src="assets/component-jump-in.jpg" width="2400" height="1452" alt="Dashboard component sheet titled Jump In. Callouts mark the card and list view toggle and the Jump In cards, including secure messages and an action-needed transaction." loading="lazy">
+                </button>
+                <figcaption>Jump In: the card or list toggle, and the cards themselves.</figcaption>
+              </figure>
+            </div>
+            <figure>
+              <button type="button" class="shot" aria-label="Enlarge image: help and sales rep component sheet">
+                <img src="assets/component-sidebar.jpg" width="2400" height="1452" alt="Dashboard component sheet with callouts for Help Center content, help buttons, and the sales rep message on the home screen." loading="lazy">
+              </button>
+              <figcaption>Help Center content, help buttons, and the sales rep message.</figcaption>
+            </figure>
+
+            <h3>Iconography</h3>
+            <div class="prose">
+              <p>Primary navigation has its own six icons, one for each area of the shell: Dashboard, Transactions, Properties, Marketing, Calculators, and Classes. A second sheet is the working library: search, edit, filter, files, communication, navigation, and the rest of the actions the screens use. One drawing style covers both, so a phone menu and a web sidebar can share a symbol.</p>
+            </div>
+            <div class="pair">
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: six primary navigation icons">
+                  <img src="assets/icons-primary.jpg" width="2400" height="1350" alt="Six white line icons on navy, labeled Dashboard, Transactions, Properties, Marketing, Calculators, and Classes." loading="lazy">
+                </button>
+                <figcaption>Primary navigation icons, one per area of the shell.</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: icon library">
+                  <img src="assets/icons-library.jpg" width="1618" height="1862" alt="A labeled grid of line icons for actions including search, preview, edit, filter, trash, navigation arrows, communication, files, and social marks." loading="lazy">
+                </button>
+                <figcaption>The broader icon library, each symbol named.</figcaption>
+              </figure>
+            </div>
+
+            <h3>Color palette</h3>
+            <div class="prose">
+              <p>Color is specified as a named palette with printed hex values. Navy and FA blue carry navigation and structure. Sunshine marks emphasis, such as a message that needs attention. Secondary and pastel colors separate cards and states without inventing a new palette per screen. The swatches below use the hex values printed on the sheet, and the sheet itself follows.</p>
+            </div>
+
+            <div class="swatch-group">
+              <h4>Primary</h4>
+              <div class="swatches">
+                <div class="swatch dark" style="background:#323840"><b>Dark Gray</b><code>#323840</code></div>
+                <div class="swatch dark" style="background:#1E4C82"><b>FA Blue</b><code>#1E4C82</code></div>
+                <div class="swatch dark" style="background:#043B7C"><b>Navy</b><code>#043B7C</code></div>
+                <div class="swatch light" style="background:#FFD963"><b>Sunshine</b><code>#FFD963</code></div>
+                <div class="swatch light" style="background:#E6F1FF"><b>Sky</b><code>#E6F1FF</code></div>
+              </div>
+            </div>
+            <div class="swatch-group">
+              <h4>Secondary</h4>
+              <div class="swatches">
+                <div class="swatch dark" style="background:#509241"><b>Forest</b><code>#509241</code></div>
+                <div class="swatch dark" style="background:#0044E9"><b>Electric Blue</b><code>#0044E9</code></div>
+                <div class="swatch dark" style="background:#9D8CDA"><b>Lavender</b><code>#9D8CDA</code></div>
+                <div class="swatch dark" style="background:#9D3B3B"><b>Paprika</b><code>#9D3B3B</code></div>
+                <div class="swatch light" style="background:#C0C8D1"><b>Light Grey</b><code>#C0C8D1</code></div>
+              </div>
+            </div>
+            <div class="swatch-group">
+              <h4>Pastels</h4>
+              <div class="swatches">
+                <div class="swatch light" style="background:#E9FAEA"><b>Mint</b><code>#E9FAEA</code></div>
+                <div class="swatch light" style="background:#F8E8DE"><b>Peach</b><code>#F8E8DE</code></div>
+                <div class="swatch light" style="background:#E6F1FF"><b>Mist</b><code>#E6F1FF</code></div>
+                <div class="swatch light" style="background:#EBEBEB"><b>Earth</b><code>#EBEBEB</code></div>
+                <div class="swatch light" style="background:#EDE9FA"><b>Lilac</b><code>#EDE9FA</code></div>
+                <div class="swatch light" style="background:#F8F2DE"><b>Starlite</b><code>#F8F2DE</code></div>
+              </div>
+            </div>
+            <div class="swatch-group">
+              <h4>Text colors and accents</h4>
+              <div class="swatches">
+                <div class="swatch dark" style="background:#323840"><b>Text: Dark Gray</b><code>#323840</code></div>
+                <div class="swatch dark" style="background:#1E61AC"><b>Link: Medium Blue</b><code>#1E61AC</code></div>
+                <div class="swatch dark" style="background:#043B7C"><b>Navigation: Navy</b><code>#043B7C</code></div>
+                <div class="swatch dark" style="background:#0044E9"><b>Accent: Electric Blue</b><code>#0044E9</code></div>
+              </div>
+            </div>
+            <figure>
+              <button type="button" class="shot" aria-label="Enlarge image: color palette sheet">
+                <img src="assets/color-palette.jpg" width="2400" height="1369" alt="Color palette sheet grouped into Primary, Secondary, Pastels, and Text Colors and Accents. Each swatch is named and labeled with a hex value." loading="lazy">
+              </button>
+              <figcaption>The palette sheet from the project file. Names and hex values above are read from this sheet.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="responsive">
+          <div class="wrap">
+            <p class="kicker"><span class="n">11</span> Responsive</p>
+            <h2>Across web, tablet, and phone</h2>
+            <div class="prose">
+              <p>The product overview calls IgniteRE mobile-friendly. The file shows that as designed screens, not as a written breakpoint spec. The same shell changes what it keeps on screen.</p>
+              <p>On the web, primary navigation stays open: Dashboard, Transactions, Properties, Marketing, Calculators, and Classes, with the eagle and the sales rep. Utility navigation — help, notifications, account — stays in the header. Tables and maps can sit side by side with their filters.</p>
+              <p>On tablet, the documented screens move the map and the list into one held surface. A farm keeps its properties and its map, and puts report, export, labels, and remove into a menu. Classes become a card grid. The invitation email is shown at this size too.</p>
+              <p>On the phone, the shell collapses. Marketing uses a menu button and a single column for one decision at a time. A transaction drops the table and shows one file, with overview, messages, and documents as tabs. The pattern library includes that mobile navigation as its own pattern, so the small screen belongs to the system.</p>
+            </div>
+            <div class="grid-3">
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: web shell on the marketing screen">
+                  <img src="assets/screen-marketing-web.jpg" width="2400" height="1604" alt="Web layout of Marketing, with the left navigation remaining open beside the page content." loading="lazy">
+                </button>
+                <figcaption>Web. Navigation stays open beside the work.</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: tablet layout of a property farm">
+                  <img src="assets/screen-properties-tablet.jpg" width="2400" height="2329" alt="Tablet layout of a property farm, with the list and map sharing one screen and actions in a menu." loading="lazy">
+                </button>
+                <figcaption>Tablet. List and map share the screen. Actions move into a menu.</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="shot" aria-label="Enlarge image: phone layout of a transaction">
+                  <img src="assets/screen-transactions-mobile.jpg" width="989" height="880" alt="Phone layout of one transaction, with a back control, a menu, and tabs for overview, messages, and documents." loading="lazy">
+                </button>
+                <figcaption>Phone. One task, with the rest of the shell behind a menu.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section id="results">
+          <div class="wrap">
+            <p class="kicker"><span class="n">12</span> Results</p>
+            <h2>Results and impact</h2>
+            <div class="prose">
+              <p>The project document states the outcome of this approach in one paragraph:</p>
+              <blockquote>
+                <p>With this approach, First American is able to enhance the user experience of IgniteRE by improving design consistency across projects by 40%, reduce redundancies by 30%, and deliver higher-quality Title and Escrow solutions 25% faster.</p>
+              </blockquote>
+            </div>
+            <div class="stats">
+              <article class="stat">
+                <b>40%</b>
+                <p>More consistent design across projects.</p>
+              </article>
+              <article class="stat">
+                <b>30%</b>
+                <p>Fewer redundancies.</p>
+              </article>
+              <article class="stat">
+                <b>25%</b>
+                <p>Faster delivery of Title and Escrow solutions.</p>
+              </article>
+            </div>
+            <div class="award">
+              <p class="kicker">Recognition</p>
+              <p>First American Title’s IgniteRE™ earns Gold at The American Business Awards® in the Real Estate Management Solution category.</p>
+            </div>
+            <div class="prose">
+              <p class="note">The opening of the project document calls IgniteRE a Gold Stevie Award winner. The result page records Gold at The American Business Awards in the Real Estate Management Solution category. The file states the figures and the award. It does not include the measurement method behind the percentages.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="reflection">
+          <div class="wrap">
+            <p class="kicker"><span class="n">13</span> Reflection</p>
+            <h2>Learnings and reflection</h2>
+            <div class="prose">
+              <p>What I can stand behind from this file is the through-line. A customer benefit — swift, easy business with First American — is tied to a shell, to golden paths, and to a component system. The screens stay inside that shell. Navigation, header, and sales rep are specified once and then used on marketing, properties, classes, and transactions.</p>
+              <p>Each persona card selects its own set of portal features, and the journey agrees. Rachel’s card selects Properties, Calculators, Marketing, and Secure Portal. Lance’s card and Angela’s card select Secure Portal. On the journey, Calculators is a short span near the start, and Secure Portal runs across most of the transaction, while phone, email, mail, and in-person contact continue beside the product. The shell keeps one mental model while the work inside it changes by role.</p>
+              <p>The five goals meet in the system. Global navigation is a map and then a bar. Brand expression is the eagle, the SPOTLIGHT name, and a named palette. Core capabilities reuse tabs, cards, tables, and step-throughs. The result the document records — more consistency, fewer redundancies, faster delivery — is what that kind of system is for.</p>
+              <p>A personal note on what I would change, and any research or test results behind the work, is not in the project file. That part is still open.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site">
+        <div class="wrap">
+          <p><strong>Suvarna Myneni</strong><br>Senior / AI-Native UX Designer, Hyderabad</p>
+          <p>UX/UI design for FirstAm IgniteRE. The interface calls the portal SPOTLIGHT.</p>
+          <p><a href="https://www.linkedin.com/in/suvarnamyneni/" rel="me noopener noreferrer">LinkedIn</a> · <a href="#top">Back to top</a></p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <dialog id="lightbox" aria-labelledby="lb-cap">
+    <div class="lb-bar">
+      <span class="lb-count" id="lb-count"></span>
+      <div class="lb-actions">
+        <button type="button" class="lb-btn" id="lb-prev">Previous</button>
+        <button type="button" class="lb-btn" id="lb-next">Next</button>
+        <button type="button" class="lb-btn" id="lb-close">Close</button>
+      </div>
+    </div>
+    <figure class="lb-frame">
+      <img id="lb-img" alt="">
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+  </dialog>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
