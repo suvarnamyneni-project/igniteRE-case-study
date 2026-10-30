@@ -43,7 +43,3 @@ https://suvarnamyneni-project.github.io/igniteRE-case-study/
 ![Marketing on the web](assets/screen-marketing-web.jpg)
 
 ![Color palette](assets/color-palette.jpg)
-
-## Notes
-
-`NOTES-for-Ravi.md` lists details the source file does not include (research method, testing, timeline, and a few labels to confirm). It is a working checklist, not part of the case study page.
