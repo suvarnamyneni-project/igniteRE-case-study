@@ -1,10 +1,10 @@
 # IgniteRE — UX case study
 
-A UX case study by **Ravi Myneni**, UX/UI designer on FirstAm IgniteRE (the portal is named SPOTLIGHT in the interface).
+A UX case study by **Ravi Myneni**, Sr UX Designer on FirstAm IgniteRE (the portal is named SPOTLIGHT in the interface).
 
-IgniteRE is a mobile-friendly platform for residential real estate transactions. It gives professionals one sign-on to share transaction details, look up property data, create marketing materials, and take part in education. The project document calls it a Gold Stevie Award winner and records Gold at The American Business Awards in the Real Estate Management Solution category.
+IgniteRE is a mobile-friendly platform for residential real estate transactions. It gives professionals one sign-on to share transaction details, look up property data, create marketing materials, and take part in education.
 
-The page walks the design process with the work that is actually in the project file: framework, foundations, personas, the transaction journey, information architecture, patterns, key screens, and the design system. It does not add research counts, quotes, timelines, or team details the file does not contain.
+The page walks the design process with the work that is actually in the project file: framework, foundations, personas, the transaction journey, information architecture, patterns, and key screens. It does not add research counts, quotes, or team details the file does not contain.
 
 ## View it
 
@@ -16,7 +16,7 @@ https://suvarnamyneni-project.github.io/igniteRE-case-study/
 
 ## The process
 
-1. **Overview** — the product, the UX/UI role, and the tools (Sketch, Figma, InVision, Miro)
+1. **Overview** — the product, the Sr UX Designer role, the tool (Figma), and the 8-month timeline
 2. **Problem** — design system, global navigation, quick win, brand expression, core capabilities
 3. **Discover** — the UX framework
 4. **Define** — intent, purpose, and three design principles
@@ -25,10 +25,9 @@ https://suvarnamyneni-project.github.io/igniteRE-case-study/
 7. **Information architecture** — global navigation
 8. **Patterns** — eleven UX patterns
 9. **UI** — Marketing, Properties, Classes, Transactions, sign-in, and the email template
-10. **Design system** — dashboard components, iconography, and color
-11. **Responsive** — web, tablet, and phone
-12. **Results** — 40% more design consistency, 30% fewer redundancies, 25% faster delivery, and the Gold award
-13. **Reflection** — what the artifacts show, and what the file leaves open
+10. **Responsive** — web, tablet, and phone
+11. **Results** — 30% fewer redundancies and 25% faster delivery
+12. **Reflection** — what the artifacts show, and what the file leaves open
 
 ## Key visuals
 

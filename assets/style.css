@@ -420,7 +420,7 @@ footer.site strong { color: var(--ink); }
   .jpg-grid { grid-template-columns: repeat(3, 1fr); }
   .goals { grid-template-columns: 1fr 1fr; }
   .principles { grid-template-columns: 1fr; }
-  .stats { grid-template-columns: repeat(3, 1fr); }
+  .stats { grid-template-columns: repeat(2, 1fr); }
   .pair { grid-template-columns: 1.15fr 0.85fr; align-items: start; }
   .pair.even { grid-template-columns: 1fr 1fr; }
   .base { grid-template-columns: 1fr 1fr; }
