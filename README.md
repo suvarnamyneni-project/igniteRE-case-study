@@ -12,7 +12,7 @@ Open `index.html` in a browser. No build step.
 
 GitHub Pages can serve this repo from the `main` branch, root folder. When Pages is enabled, the site is:
 
-https://suvarnamyneni-project.github.io/igniteRE-case-study/
+https://suvarnamyneni.github.io/igniteRE-case-study/
 
 ## The process
 
