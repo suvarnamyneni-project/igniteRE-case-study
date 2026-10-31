@@ -13,6 +13,7 @@
   --sans: Inter, "Segoe UI", system-ui, sans-serif;
   --shadow: 0 24px 50px -32px rgba(28, 36, 48, 0.45);
   --header: 58px;
+  --measure: 44rem;
 }
 
 * { box-sizing: border-box; }
@@ -162,7 +163,7 @@ li { margin: 0.25rem 0; }
 }
 
 .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
-.prose { max-width: 68ch; }
+.prose { max-width: var(--measure); }
 .kicker {
   font-size: 12px;
   letter-spacing: 0.14em;
@@ -172,8 +173,8 @@ li { margin: 0.25rem 0; }
   margin: 0 0 8px;
 }
 .kicker .n { color: #7a4f12; margin-right: 0.35rem; }
-.lead { font-size: 1.2rem; color: #3c4654; max-width: 42rem; }
-.note { color: var(--muted); font-size: 0.95rem; }
+.lead { font-size: 1.2rem; color: #3c4654; max-width: var(--measure); }
+.note { color: var(--muted); font-size: 0.95rem; max-width: var(--measure); }
 
 .hero { padding: 48px 0 12px; }
 .meta {
@@ -208,7 +209,7 @@ figcaption {
   color: var(--muted);
   font-size: 0.9rem;
   margin-top: 8px;
-  max-width: 75ch;
+  max-width: var(--measure);
 }
 .shot {
   display: block;
@@ -252,10 +253,12 @@ figcaption {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 16px;
-  padding: 18px 18px 8px;
+  padding: 18px;
 }
 .goal h3, .principle h3 { font-family: var(--serif); font-weight: 560; }
-.goal p:last-child, .principle p:last-child { margin-bottom: 10px; }
+.goal p:last-child, .principle p:last-child,
+.card > :last-child, .goal > :last-child, .principle > :last-child,
+.stat > :last-child, .persona-copy > :last-child, .principle blockquote > p:last-child { margin-bottom: 0; }
 
 blockquote {
   margin: 0 0 1rem;
@@ -353,7 +356,7 @@ blockquote {
   line-height: 1;
   margin-bottom: 6px;
 }
-.stat p { margin: 0 0 12px; }
+.stat p { margin: 0; }
 .award {
   margin-top: 16px;
   background: var(--navy);
@@ -414,13 +417,38 @@ footer.site {
 footer.site a { font-weight: 700; }
 footer.site strong { color: var(--ink); }
 
+/* Even paragraph alignment: one left edge, one measure, justified body text */
+.prose p, .lead, .note, figcaption,
+.goal p, .principle blockquote p, .persona-copy > p, .stat p {
+  text-align: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-wrap: pretty;
+}
+blockquote > p:last-child { margin-bottom: 0; }
+@media (min-width: 720px) {
+  /* Justify only the wide body measure; short card and caption lines stay left-aligned */
+  .prose p, .lead, .wrap > .note, .principle blockquote p, .persona-copy > p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+.principle blockquote, .persona-copy > p { max-width: var(--measure); }
+.prose > :last-child { margin-bottom: 0; }
+/* Consistent vertical rhythm between text blocks and figures/grids */
+.wrap > figure, .wrap > .grid-2, .wrap > .grid-3, .wrap > .pair,
+.wrap > .goals, .wrap > .principles, .wrap > .stats, .wrap > .pyramid,
+.wrap > .ia-grid, .wrap > .persona { margin-top: 1.5rem; margin-bottom: 0; }
+.wrap > * + .prose, .wrap > * + .note { margin-top: 1.5rem; }
+.wrap > h2 + .prose { margin-top: 0; }
+
 @media (min-width: 720px) {
   .meta { grid-template-columns: repeat(4, 1fr); }
   .facts { grid-template-columns: repeat(3, 1fr); }
   .jpg-grid { grid-template-columns: repeat(3, 1fr); }
   .goals { grid-template-columns: 1fr 1fr; }
   .principles { grid-template-columns: 1fr; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stats { grid-template-columns: repeat(3, 1fr); }
   .pair { grid-template-columns: 1.15fr 0.85fr; align-items: start; }
   .pair.even { grid-template-columns: 1fr 1fr; }
   .base { grid-template-columns: 1fr 1fr; }
@@ -467,7 +495,7 @@ footer.site strong { color: var(--ink); }
   }
   .ia-grid { grid-template-columns: repeat(3, 1fr); }
   .grid-3 { grid-template-columns: repeat(3, 1fr); align-items: start; }
-  .wrap { padding: 0 36px 0 28px; }
+  .wrap { padding: 0 32px; }
   .hero { padding-top: 56px; }
 }
 
